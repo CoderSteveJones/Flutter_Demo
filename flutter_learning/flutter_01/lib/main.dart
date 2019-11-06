@@ -5,6 +5,7 @@ import 'demo/bottomNavigationbar_demo.dart';
 import 'demo/basic_demo.dart';
 import 'demo/layout_demo.dart';
 import 'demo/view_demo.dart';
+import 'demo/sliver_demo.dart';
 
 void main() => runApp(App());
 
@@ -14,7 +15,7 @@ class App extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: SliverDemo(),
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
@@ -59,9 +60,7 @@ class Home extends StatelessWidget {
         body: TabBarView(
           children: <Widget>[
             ListViewDemo(),
-//            Icon(Icons.change_history, size: 128.0, color: Colors.grey),
             BasicDemo(),
-//            Icon(Icons.directions_bike, size: 128.0, color: Colors.grey),
             LayoutDemo(),
             ViewDemo(),
           ],
