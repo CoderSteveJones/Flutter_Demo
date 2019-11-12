@@ -5,6 +5,9 @@ class FormDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ThemeDemo(),
+      appBar: AppBar(
+        title: Text('FormDemo'),
+      ),
     );
   }
 }
