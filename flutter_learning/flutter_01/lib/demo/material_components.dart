@@ -10,6 +10,11 @@ import 'alertDialog_demo.dart';
 import 'bottomSheet_demo.dart';
 import 'snackBar_demo.dart';
 import 'expansionPanel_demo.dart';
+import 'chip_demo.dart';
+import 'dataTable_demo.dart';
+import 'paginatedDataTable_demo.dart';
+import 'cart_demo.dart';
+import 'stepper_demo.dart';
 
 class MaterialComponents extends StatelessWidget {
   @override
@@ -21,6 +26,11 @@ class MaterialComponents extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          ListItem(title: 'StepperDemo',page: StepperDemo()),
+          ListItem(title: 'CartDemo',page: CartDemo()),
+          ListItem(title: 'PaginatedDataTableDemo',page: PaginatedDataTableDemo()),
+          ListItem(title: 'DataTableDemo',page: DataTableDemo()),
+          ListItem(title: 'ChipDemo',page: ChipDemo()),
           ListItem(title: 'ExpansionPanelDemo',page: ExpansionPanelDemo()),
           ListItem(title: 'SnackBarDemo',page: SnackBarDemo()),
           ListItem(title: 'BottomSheetDemo',page: BottomSheetDemo()),
