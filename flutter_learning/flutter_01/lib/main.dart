@@ -9,6 +9,7 @@ import 'demo/sliver_demo.dart';
 import 'demo/navigation_demo.dart';
 import 'demo/form_demo.dart';
 import 'demo/material_components.dart';
+import 'demo/state/state_management_demo.dart';
 
 void main() => runApp(App());
 
@@ -23,12 +24,13 @@ class App extends StatelessWidget {
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
         splashColor: Colors.white54,
       ),
-      initialRoute: '/mc',
+      initialRoute: '/statemanagement',
       routes: {
         '/' : (context) => Home(),
         '/form' : (context) => FormDemo(),
         '/about' : (context) => Page(title: 'About'),
         '/mc' : (context) => MaterialComponents(),
+        '/statemanagement' : (context) => StateManagementDemo(),
       },
     );
   }
