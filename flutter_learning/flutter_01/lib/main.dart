@@ -12,6 +12,7 @@ import 'demo/form_demo.dart';
 import 'demo/material_components.dart';
 import 'demo/state/state_management_demo.dart';
 import 'demo/rxdart/rxdart_demo.dart';
+import 'demo/bloc/bloc_demo.dart';
 
 void main() => runApp(App());
 
@@ -26,7 +27,7 @@ class App extends StatelessWidget {
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
         splashColor: Colors.white54,
       ),
-      initialRoute: '/rxDart',
+      initialRoute: '/bloc',
       routes: {
         '/' : (context) => Home(),
         '/form' : (context) => FormDemo(),
@@ -34,7 +35,8 @@ class App extends StatelessWidget {
         '/mc' : (context) => MaterialComponents(),
         '/statemanagement' : (context) => StateManagementDemo(),
         '/stream' : (context) => StreamDemo(),
-        '/rxDart' : (context) => RxDartDemo(),
+        '/rxdart' : (context) => RxDartDemo(),
+        '/bloc' : (context) => BlocDemo(),
       },
     );
   }
