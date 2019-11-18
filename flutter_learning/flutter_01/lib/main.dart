@@ -15,6 +15,8 @@ import 'demo/rxdart/rxdart_demo.dart';
 import 'demo/bloc/bloc_demo.dart';
 import 'demo/http/http_demo.dart';
 import 'demo/animation/animation_demo.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+
 
 void main() => runApp(App());
 
@@ -23,13 +25,21 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
+      localizationsDelegates: [                             //此处
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      supportedLocales: [                                   //此处
+        const Locale('zh','CH'),
+        const Locale('en','US'),
+      ],
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
         splashColor: Colors.white54,
       ),
-      initialRoute: '/animation',
+      initialRoute: '/mc',
       routes: {
         '/' : (context) => Home(),
         '/form' : (context) => FormDemo(),
