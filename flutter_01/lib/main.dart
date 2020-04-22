@@ -33,7 +33,7 @@ class App extends StatelessWidget {
         const Locale('zh','CH'),
         const Locale('en','US'),
       ],
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedodeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
